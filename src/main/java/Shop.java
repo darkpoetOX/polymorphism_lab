@@ -12,34 +12,34 @@ public class Shop {
     private List<String> tieredCakeFlavours;
     private List<String> trayBakeNames;
     private List<String> trayBakeFlavours;
-//  private double till;
 
     public Shop(String name){
         this.name = name;
         this.stock = new ArrayList<>();
-        this.cupcakeNames = Arrays.asList("Vanilla Cupcake", "Chocolate Cupcake", "Strawberry Cupcake");
+        this.cupcakeNames = Arrays.asList("Delight Cupcake", "Starburst Cupcake", "Custard Cupcake");
         this.cupcakeFlavours = Arrays.asList("Vanilla", "Chocolate", "Strawberry");
         this.tieredCakeNames = Arrays.asList("Wedding Cake", "Birthday Cake", "Anniversary Cake");
         this.tieredCakeFlavours = Arrays.asList("Vanilla", "Chocolate", "Strawberry");
         this.trayBakeNames = Arrays.asList("Banana Bread", "Carrot Cake", "Lemon Bars");
-        this.trayBakeFlavours = Arrays.asList("XtrmIcing", "Lettuce", "Avocado");
-//      this.till = till;
+        this.trayBakeFlavours = Arrays.asList("ExtremeIcing", "Lettuce", "Avocado");
     }
 
     public String getName(){
         return this.name;
     }
 
-    public List<Cake> getStock() {
+    public List<Cake> getStock() { //Don't know how to directly test this with the AssertThat method.
         return this.stock;
     }
 
-//    public double getTill() {
-//        return this.till;
-//    }
-//
-//    public void setTill(double till) {
-//        this.till = till;
-//    }
+//    public void overallTotal(){
+//        for (Cake cake : stock) {
+//            cake.displayMenu();
+//            int quantity = 7;
+//            double totalPrice = cake.calculateTotalPriceOfCake(quantity);
+//            System.out.println("Total Price for " + quantity + " " + cake.getName() + ": $" + totalPrice);
+//            System.out.println();
+//        }
+//    } //Not enough time to test.
 
 }
